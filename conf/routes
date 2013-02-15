@@ -1,0 +1,11 @@
+# Routes
+
+GET     /scala/basic                controllers.ScalaApplication.basic
+GET     /java/basic                 controllers.JavaApplication.basic
+
+POST    /scala/post                 controllers.ScalaApplication.post
+
+GET     /scala/sleep                controllers.ScalaApplication.sleep(millis: Long ?= 1000)
+GET     /java/sleep                 controllers.JavaApplication.sleep(millis: Long ?= 1000)
+
+GET     /general/assets/*file       controllers.Assets.at(path="/public", file)
